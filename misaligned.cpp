@@ -8,10 +8,8 @@ std::string printLine(int majorColorIdx, int minorColorIdx)
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
 
-    //cout<<left<<setw(4)<<(majorColorIdx * 5 + minorColorIdx ) << " | " <<left<<setw(10)<< majorColor[majorColorIdx] << " | " <<left<<setw(10)<< minorColor[majorColorIdx];
     std::ostringstream a;
-    a<<left<<setw(4)<<(majorColorIdx * 5 + minorColorIdx ) << " | " <<left<<setw(10)<< majorColor[majorColorIdx] << " | " <<left<<setw(10)<< minorColor[majorColorIdx]<<"\0";
-    cout<<a.str()<<endl;
+    a<<left<<setw(4)<<(majorColorIdx * 5 + minorColorIdx ) << " | " <<left<<setw(10)<< majorColor[majorColorIdx] << " | " << minorColor[minorColorIdx]<<"\0";
     return a.str();
 }
 

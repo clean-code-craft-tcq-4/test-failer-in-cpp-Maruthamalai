@@ -12,11 +12,11 @@ int main() {
     std::string received = printLine(0, 0);
     assert(expected.compare(received)== 0);
 
-    expected = "10   | Red        | Slate";
+    expected = "10   | Black      | Blue";
     received = printLine(2, 0);
     assert(expected.compare(received)== 0);
     
-    expected = "17   | Yellow     | Orange";
+    expected = "20   | Violet     | Blue";
     received = printLine(4, 0);
     assert(expected.compare(received)== 0);   
 
